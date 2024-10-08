@@ -17,11 +17,11 @@ function wait1(t) {
   }
   
   async function calculateTime(t1, t2, t3) {
-    const startTime = Date.now();
+    const startTime = new Date();
   
     await Promise.all([wait1(t1), wait2(t2), wait3(t3)]);
   
-    const totalTime = Date.now() - startTime;
+    const totalTime = new Date() - startTime;
     return totalTime;
   }
   
