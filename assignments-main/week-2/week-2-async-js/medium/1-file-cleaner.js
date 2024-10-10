@@ -7,7 +7,7 @@ function fileCleaner(){
             console.log(err);
         }
 
-        const temp =data.replace(/\s+/g, " ").trim();
+        const temp =data.replace(/\s+/g, " ").trim();//main thing  --> /\s+g --> it clear the space
         
         fs.writeFile(file, temp, "utf8", (err) => {
             if(err){
